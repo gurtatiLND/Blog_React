@@ -1,5 +1,8 @@
 import Navbar from "./Navbar";
 import Home from "./Home";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Route, Switch } from "react-router-dom/cjs/react-router-dom.min";
+
 
 function App() {
   //we can create variables and then use it return template(in JSX part)
@@ -9,12 +12,18 @@ function App() {
 
   // React always convert all data(numbers, string or arrays) from variables to a string, except booleans or objects
   return (
-    <div className="App">
-      <Navbar />
-      <div className="content">
-        <Home />
+    <Router>
+      <div className="App">
+          <Navbar />
+        <div className="content">
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
