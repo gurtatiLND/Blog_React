@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('Mario');
     const [isPending, setIsPending] = useState(false);
+    const history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -12,6 +14,7 @@ const Create = () => {
 
         setIsPending(true);
         
+        //adding a new blog to the db.json file
         fetch('http://localhost:8000/blogs', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
@@ -19,6 +22,7 @@ const Create = () => {
         }).then(() => {
             console.log('new blog added');
             setIsPending(false);
+            history.push('/'); // use push method to redirect to the HOME page when blog is added
         })
     }
 
