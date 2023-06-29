@@ -8,7 +8,7 @@ const useFetch = (url) => {
   
     useEffect(() => {
       {/* we create an abort controller(this is a cleanup function) which will stop fetch the data and updating the state 
-      when we change the page */}
+      when we quickly change the page */}
       const abortCont = new AbortController();
 
       fetch(url, { signal: abortCont.signal })
