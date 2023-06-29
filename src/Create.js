@@ -6,10 +6,10 @@ const Create = () => {
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('Mario');
     const [isPending, setIsPending] = useState(false);
-    const history = useHistory();
+    const history = useHistory(); // using this hook to go through the history
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // that's help not to reload page again
         const blog = { title, body, author };
 
         setIsPending(true);

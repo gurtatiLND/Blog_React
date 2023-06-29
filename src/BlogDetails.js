@@ -8,11 +8,12 @@ const BlogDetails = () => {
     const { data: blog, error, isPending } = useFetch('http://localhost:8000/blogs/' + id);
     const history = useHistory();
 
+    //using this function to delete blog from db.json throug the DELEE method
     const handleClick = () => {
         fetch('http://localhost:8000/blogs/' + blog.id, {
             method: 'DELETE'
         }).then(() => {
-            history.push('/');
+            history.push('/'); // and add the history hook to reditect to the HOME page
         })
     }
 
