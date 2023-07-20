@@ -1,12 +1,12 @@
-# Simple Blog Website which is built with React.js
+# Blog Website which is built with React.js
 
 This Website is created for the demonstration and practice of my React.js skills.
 
-To run this app in your machine, after cloning this repo, you need to install the node modules locally. Navigate to the root folder of the project and in the terminal type:
+To run this app on your machine, after cloning this repo, you need to install the node modules locally. Navigate to the root folder of the project and in the terminal type:
 
 `npm install`
 
-then you need to get the embedded server up and running:
+Then you need to run a fake rest API:
 
 `npx json-server --watch data/db.json --port 8000`
 
