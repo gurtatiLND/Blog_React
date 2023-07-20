@@ -5,6 +5,7 @@
   margin: 0;
   font-family: "Quicksand";
   color: #333;
+  background-color:#eefabb;
 }
 .navbar {
   padding: 20px;
@@ -38,7 +39,8 @@
 .blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #f7f1f1;
+  border-bottom: 1px solid #eefabb;
+  /*background-color: #e5f899;*/
 }
 
 .blog-preview:hover {
@@ -62,6 +64,7 @@
 }
 
 .blog-details div {
+  color: #333;
   margin: 20px 0;
 }
 
