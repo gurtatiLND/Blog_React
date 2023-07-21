@@ -5,6 +5,7 @@ import { Route, Switch } from "react-router-dom/cjs/react-router-dom.min";
 import Create from "./Create";
 import BlogDetails from "./BlogDetails";
 import NotFound from "./NotFound";
+import Footer from "./Footer";
 
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
             </Route>
           </Switch>
         </div>
+      </div>
+      <div className="Footer">
+        <Footer />
       </div>
     </Router>
   );

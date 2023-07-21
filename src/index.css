@@ -35,6 +35,16 @@
   padding: 20px;
 }
 
+/*footer*/
+.footer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eefabb;
+}
+
 /* blog previews list*/
 .blog-preview {
   padding: 10px 16px;
