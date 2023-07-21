@@ -6,7 +6,7 @@ To run this app on your machine, after cloning this repo, you need to install th
 
 `npm install`
 
-Then you need to run a fake rest API:
+Then you need to open another terminal in a separate tab and to run a fake rest API:
 
 `npx json-server --watch data/db.json --port 8000`
 
